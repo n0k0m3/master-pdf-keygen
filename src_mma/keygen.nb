@@ -1,0 +1,119 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3781,        111]
+NotebookOptionsPosition[      3338,         96]
+NotebookOutlinePosition[      3735,        112]
+CellTagsIndexPosition[      3692,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "computerId", " ", "=", " ", 
+   "\"\<00000031-0039-0036-3239-383330333531-564\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{" ", 
+  RowBox[{"(*", 
+   RowBox[{"Use", " ", "your", " ", "own", " ", "computerId", " ", 
+    RowBox[{"here", "."}]}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.8093476627752743`*^9, 3.8093477726179523`*^9}, {
+   3.809347856255383*^9, 3.80934790740339*^9}, {3.809347944204801*^9, 
+   3.809347973640047*^9}, {3.809348040037257*^9, 3.809348096805737*^9}, {
+   3.80934812818725*^9, 3.809348136398197*^9}, {3.809348324526285*^9, 
+   3.809348427695464*^9}, {3.8093485487933207`*^9, 3.809348566141683*^9}, 
+   3.809348615594768*^9, {3.809348654075705*^9, 
+   3.809348697596324*^9}},ExpressionUUID->"de9e9095-cd74-46e4-9148-\
+5a4e42f52349"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"encryStr1", " ", "=", " ", 
+   RowBox[{"Hash", "[", 
+    RowBox[{
+     RowBox[{"Hash", "[", 
+      RowBox[{
+       RowBox[{"StringDrop", "[", 
+        RowBox[{"computerId", ",", " ", 
+         RowBox[{"-", "4"}]}], "]"}], ",", " ", "\"\<SHA\>\"", ",", " ", 
+       "\"\<HexString\>\""}], "]"}], ",", "\"\<SHA\>\"", ",", 
+     "\"\<HexString\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"registrationCode", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"RandomChoice", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Alphabet", "[", "]"}], "//", "ToUpperCase"}], ",", " ", 
+      "18"}], "]"}], "//", "StringJoin"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"encryStr2", " ", "=", " ", 
+   RowBox[{"Hash", "[", 
+    RowBox[{
+     RowBox[{"Hash", "[", 
+      RowBox[{
+      "registrationCode", ",", " ", "\"\<SHA\>\"", ",", " ", 
+       "\"\<HexString\>\""}], "]"}], ",", "\"\<SHA\>\"", ",", 
+     "\"\<HexString\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"activationCode", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Hash", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Riffle", "@@", 
+         RowBox[{"Characters", "/@", 
+          RowBox[{"{", 
+           RowBox[{"encryStr2", ",", " ", "encryStr1"}], "}"}]}]}], "//", 
+        "StringJoin"}], ",", " ", "\"\<SHA\>\"", ",", "\"\<HexString\>\""}], 
+      "]"}], "<>", 
+     RowBox[{"RandomChoice", "[", 
+      RowBox[{
+       RowBox[{"Alphabet", "[", "]"}], ",", " ", "10"}], "]"}]}], "//", 
+    "ToUpperCase"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Registration Code: \>\"", ",", " ", "registrationCode"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<Activation Code: \>\"", ",", " ", "activationCode"}], "]"}], 
+   ";"}], " "}]}], "Input",ExpressionUUID->"a9463bae-d61e-4a3c-9be0-\
+19dfe1dbf10b"]
+},
+WindowSize->{606., 658.5},
+WindowMargins->{{Automatic, 162}, {-94.5, Automatic}},
+FrontEndVersion->"12.1 for Linux x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b33f9f67-2f97-4a22-ac70-444d236e74b1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 803, 17, 51, "Input",ExpressionUUID->"de9e9095-cd74-46e4-9148-5a4e42f52349"],
+Cell[1364, 39, 1970, 55, 433, "Input",ExpressionUUID->"a9463bae-d61e-4a3c-9be0-19dfe1dbf10b"]
+}
+]
+*)
+
