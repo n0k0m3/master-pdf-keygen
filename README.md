@@ -8,6 +8,8 @@ To reduce security concern, I am going to rewrite this keygen in Javascript and 
 
 Now I finish my original goal, see [demo](https://jingmatrix.github.io/articles/writings/2019-12-21-Workflow/#writing-documents) here.
 
+**Be offline when you press `activate`**
+
 # FreePascal Support
 
 Code in `src_fpc` can be compiled (and test) using FreePascal with command
