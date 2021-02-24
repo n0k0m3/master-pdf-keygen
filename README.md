@@ -4,6 +4,12 @@ The Pascal code is written by [RadiXX11](https://radixx11rce2.blogspot.com/p/sou
 
 To reduce security concern, I am going to rewrite this keygen in Javascript and publish it on web.
 
+As pointed out [here](https://aur.archlinux.org/packages/masterpdfeditor-libs-included/):
+
+> I discovered that version **5.6.80** is the very last which can be registered with keygen.
+
+All available verisons can be downloaded from: https://code-industry.ru/public/ .
+
 ## demo
 
 Now I finish my original goal, see [demo](https://jingmatrix.github.io/articles/writings/2019-12-21-Workflow/#writing-documents) here.
