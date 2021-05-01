@@ -14,6 +14,7 @@ python src_python/keygen.py
 Copy `Registration Code`, `Activation Code` and profit.
 ## Arch PKGBUILD
 Because this keygen only works up to version 5.6.80 (reason below), I created a PKGBUILD for this version.
+(Other distro can download the `.deb` from [here](https://code-industry.ru/public/))
 
 - Clone `PKGBUILD`
 - Run (and install) `makepkg`
