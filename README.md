@@ -20,7 +20,7 @@ Because this keygen only works up to version 5.6.80 (reason below), I created a 
 - Run (and install) `makepkg`
 - (Optional if you don't want to use `makepkg -i`) Install with `pacman`
 ```
-curl https://raw.githubusercontent.com/n0k0m3/keygen_master_pdf_editor/master/PKGBUILD -o "PKGBUILD"
+curl https://raw.githubusercontent.com/n0k0m3/master-pdf-keygen/main/PKGBUILD?token=ACTLJ4XAUK5VN5J3T22POMTBQWCXE -o "PKGBUILD"
 # Make package, clean, install dependencies, install
 makepkg -csi
 ```
