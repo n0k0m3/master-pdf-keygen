@@ -5,7 +5,7 @@
 ## Python support (Python 3+)
 Direct run using `curl`:
 ```
-python -c "$(curl -fsSL https://raw.githubusercontent.com/n0k0m3/keygen_master_pdf_editor/master/src_python/keygen.py)"
+python -c "$(curl -fsSL https://raw.githubusercontent.com/n0k0m3/master-pdf-keygen/main/src_python/keygen.py?token=ACTLJ4SB4M2IEOLEUQFITY3BQWCSQ)"
 ```
 Or clone the repo and run:
 ```
