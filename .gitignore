@@ -3,3 +3,5 @@
 Keygen
 *.rsj
 .vscode
+*.src.tar.gz
+*.pkg.tar.zst
