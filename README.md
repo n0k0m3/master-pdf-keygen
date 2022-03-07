@@ -16,19 +16,20 @@ Copy `Registration Code`, `Activation Code` and profit.
 Because this keygen only works up to version 5.6.80 (reason below), I created a PKGBUILD for this version.
 (Other distro can download the `.deb` from [here](https://code-industry.ru/public/))
 
-- Clone `PKGBUILD`
-- Run (and install) `makepkg`
-- (Optional if you don't want to use `makepkg -i`) Install with `pacman`
-```
-curl https://raw.githubusercontent.com/n0k0m3/master-pdf-keygen/main/PKGBUILD?token=ACTLJ4XAUK5VN5J3T22POMTBQWCXE -o "PKGBUILD"
+
+```sh
+# Clone the repo with SSH (can use HTTPS auth as well)
+git clone git@github.com:n0k0m3/master-pdf-keygen.git
+cd master-pdf-keygen
+
 # Make package, clean, install dependencies, install
 makepkg -csi
 ```
-Remove downloaded extras if needed
-```
-rm master-pdf-editor-5.6.80-qt5.x86_64.tar.gz
-rm masterpdfeditor-5.6.80-1-x86_64.pkg.tar.zst
-rm PKGBUILD
+After running keygen remember to cleanup
+```sh
+# Cleanup
+cd ..
+rm -rf master-pdf-keygen
 ```
 
 ## Keygen algorithm
